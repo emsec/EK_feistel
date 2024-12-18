@@ -1,7 +1,7 @@
 # EK_feistel
 Qt GUI application which illustrates a round of Feistel function generation.
 
-![Feistel Function Screenshot](https://raw.githubusercontent.com/emsec/EK_feistel/main/doc/screenshot.png "Feistel Function Screenshot")
+![Feistel Function Screenshot](https://github.com/emsec/EK_feistel/blob/main/doc/screenshot.png "Feistel Function Screenshot")
 
 ## Introduction
 The goal og the Feistel Function app is to illustrate the most difficult part of the DES algorithm : how the Feistel Function bits are generated from the input of the encryption round. The input comprises the right half of the message bits created by the previous round and the 48-bit round key.
