@@ -1,0 +1,36 @@
+* {
+    color : black ;
+}
+
+QSpinBox {
+    color : black;
+    background : lightGray;
+}
+
+MainWindow {
+    qproperty-colorHighState   : #C02000;
+    qproperty-colorLowState    : #002080;
+    qproperty-colorBackground  : #FFFFFF;
+    qproperty-colorNeutral     : #808080;
+    qproperty-colorText        : #000000;
+    qproperty-colorSbox        : #E0E1E2;
+    background : lightGray ;
+}
+
+QPushButton {
+    background : #A0A1A2 ;
+}
+
+QTextEdit {
+    background : lightGray ;
+    font-weight : bold;
+}
+
+QCheckBox {
+    color : black;
+}
+
+QCheckBox::indicator {
+    width: 33px;
+    height: 33px;
+}

@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/feistel.qml</file>
+        <file>qss/dark.qss</file>
+        <file>qss/light.qss</file>
+        <file>icons/merry-christmas.png</file>
+        <file>icons/key.svg</file>
+        <file>icons/xor.svg</file>
+    </qresource>
+</RCC>

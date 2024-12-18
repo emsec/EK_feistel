@@ -1,0 +1,49 @@
+* {
+    color : white ;
+}
+
+QMenu {
+    color : black;
+}
+
+QMenuItem {
+    color : black;
+}
+
+QMenuBar {
+    color : black;
+}
+
+QSpinBox {
+    color : black;
+    background : lightGray;
+}
+
+MainWindow {
+    qproperty-colorHighState   : #ff0000;
+    qproperty-colorLowState    : #2080ff;
+    qproperty-colorBackground  : #111213;
+    qproperty-colorNeutral     : #808080;
+    qproperty-colorText        : #FFFFFF;
+    qproperty-colorSbox        : #505050;
+    background : #202122 ;
+}
+
+QPushButton {
+    background : #404142 ;
+}
+
+QTextEdit {
+    background : #202122 ;
+    font-weight : bold;
+}
+
+QCheckBox {
+    color : lightGray;
+    background : #101113 ;
+}
+
+QCheckBox::indicator {
+    width: 33px;
+    height: 33px;
+}
