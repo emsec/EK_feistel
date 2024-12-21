@@ -6,10 +6,10 @@ Qt GUI application which illustrates a round of Feistel function generation.
 ## Introduction
 The goal of the Feistel Function app is to illustrate the most tricky part of the DES algorithm : how the Feistel Function bits needed for encryption are generated. The input of the Feistel Function consists out of the right 32 bit from the value obtained from the previous round and the 48-bit round key. The user can enter these values as hex code in the input boxes. Alternatively bytes of the 32 bit input value can be toggled directly by clicking on them. Using the menu entry `Operations` the entire value can be bitwise inverted by single mouse click.
 
-The Feistel Function app is written in C++ and Qt, thus download and compilation is required to run it. While this should work on all major operating system platforms like Windows, MacOS, and Linux, the use Linux is highly recommended. This document describes in particular the installation of Ubuntu Linux version 22.04 LTS with all the tools neccessary to run the app. Further down the document there are some hints for other operating systems as well but please understand that no support will be granted.
+The Feistel Function app is written in C++ and Qt, thus download and compilation is required to run it. While this should work on all major operating system platforms like Windows, MacOS, and Linux, the use of Linux is highly recommended. This document describes in particular the installation of Ubuntu Linux version 22.04 LTS with all the tools neccessary to run the app. Further down the document there are some hints for other operating systems as well - but please understand that no support will be given for that.
 
 ## Ubuntu 22.04 LTS guest VM installation
-If the current operating system is Windows or MacOS you would start to create a virtual machine with at least 30 GB disk space. The following step-by-step procedure assumes that VirtualBox has been installed on the host.
+If your current operating system is Windows or MacOS you would start to create a virtual machine with at least 30 GB disk space. The following step-by-step procedure assumes that VirtualBox has been installed on the host.
 
 ### VirtualBox recommanded Settings
 The following settings are recommended when setting up the VM with VirtualBox:
@@ -20,10 +20,10 @@ The following settings are recommended when setting up the VM with VirtualBox:
 * Display - Video Memory : 128 MB
 
 ### Download and Attach
-To install the Ubuntu guest system we have to download the `.iso` file and attach it as virtual DVD. The download source used here [is](https://releases.ubuntu.com/jammy/ubuntu-22.04.5-desktop-amd64.iso) but is also possible to obtain the file via mirror or bittorrent. In VirtualBox the file can be attached via `Settings > Storage > click on Empty DVD icon > Choose a disk file ...`.
+To install the Ubuntu guest system we have to download the `.iso` file and attach it as virtual DVD. The download source used is [here](https://releases.ubuntu.com/jammy/ubuntu-22.04.5-desktop-amd64.iso) but is also possible to obtain the file via mirror or bittorrent. In VirtualBox the file can be attached via `Settings > Storage > click on Empty DVD icon > Choose a disk file ...`.
 
 ### Ubuntu Installation
-When starting the (virtual) machine the first time pick the option 'Try or Install Ubuntu'. The installation process will walk you through a couple of steps like keyboard, "Normal installation", "Erase disk and install Ubuntu", select timezone from world map, and type user name and password of your choice. It is recommended to set the checkmark at "log in automatically" to get faster access to the desktop without password authorization when rebooting the VM. At the end of this installation procedure a prompt will ask to remove installation media and to press "Enter". Since VirtualBox will automatically boot the installed system simply pressing "Enter" is good enough.
+When starting the (virtual) machine the first time pick the option `Try or Install Ubuntu`. The installation process will walk you through a couple of steps like keyboard language selection, "Normal installation", "Erase disk and install Ubuntu", select timezone from world map, and type user name and password of your choice. It is recommended to set the checkmark at `log in automatically` to get faster access to the desktop without password authorization when rebooting the VM. At the end of this installation procedure a prompt will ask to remove installation media and to press "Enter". Since VirtualBox will automatically boot the installed system simply pressing `Enter` is good enough.
 
 After the first reboot Ubuntu will offer a number of services. I'd recommend to skip or decline each of them, especially the very time consuming upgrades.
 
@@ -36,12 +36,12 @@ The command to run is
 sudo apt-get install git
 ```
 
-### Install `git` on other platforms
+#### Run `git` on other platforms
 First check whether `git` is already installed. In your terminal / power shell / cmd window type
 ``` shell
 git --version
 ```
-If git is missing this [link](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) might help. However - as previously mentioned this installation instruction has the focus on Ubuntu 22.04 user.
+If git is missing this [link](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) might help. However - as previously mentioned this README has the focus on Ubuntu 22.04 user only.
 
 ### Download the Feistel Function source code
 Go to or create a parent directory of your choice. Issue the command:
@@ -59,7 +59,7 @@ chmod 755 requirements.sh
 ```
 
 ### Switch to Plasma Desktop
-This step is not essential, however, it is recommended to switch to plasma desktop. The plasma desktop provides a surface which looks familiar to a Windows user. Additionally it is based on Qt, thus required libraries for the Feistel Function app are already in place. The most important reason is that the VirtualBox guest tools cooparate better with the host, thus allowing to resize the Ubuntu window at will.
+This step is not essential, however, it is recommended to switch to plasma desktop. The plasma desktop provides a surface which looks similar to Windows. Additionally it is based on Qt, thus required libraries for the Feistel Function app are already in place. The most important reason is that the VirtualBox guest tools cooparate better with the host, thus allowing to resize the Ubuntu window at will.
 * Log out (symbol upper right corner)
 * Click user name on login screen
 * Click settings icon (lower right corner)
@@ -67,7 +67,7 @@ This step is not essential, however, it is recommended to switch to plasma deskt
 * Log in
 
 ### Nice to have in Plasma Desktop
-Similar to Windows there is a start button in the lower left corner which can be used to start every available app. The most important ones are "Konsole" (in System) and "Qt Creator" (in Development). I use to pull the appropriate icons to the desktop ("Copy Here") so that launching them gets very easy.
+Similar to Windows there is a start button in the lower left corner which can be used to start every available app. The most important apps for this project are "Konsole" (in System) and "Qt Creator" (in Development). I use to pull the appropriate icons to the desktop ("Copy Here") so that launching them gets very easy.
 
 ## Build an Run the Feistel Function App
 ### Build
@@ -101,6 +101,7 @@ If you
 * have fun developing software with Qt and C++ (like this project) ...
 * like to contribute to a large open source project with users all around the globe ...
 * like to get paid for your work ...
+
 you should apply for a student assistance position (SHK) within the [HAL](https://github.com/emsec/hal) software developer community.
 
 
