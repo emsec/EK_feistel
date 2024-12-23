@@ -6,7 +6,7 @@ Qt GUI application which illustrates a round of Feistel function generation.
 ## Introduction
 The app calculates values for the Feistel Function (the _f_-function) from the 32 bit round input R_i obtained from the previous round and the 48-bit round key k_i.
 
-The Feistel Function app is written in C++ and Qt, thus download and compilation is required to run it. While this should work on all major operating system platforms like Windows, macOs, and Linux, the use of Linux is highly recommended. This document describes in particular the installation of Ubuntu Linux version 22.04 LTS with all the tools necessary to run the app. Further down the document there is a step-by-step instruction how to install Ubuntu 22.04 LTS in a VirtualBox machine. At the end of the document there are some hints for other operating systems as well - but please understand that no support will be given for that.
+The Feistel Function app is written in C++ and Qt, thus download and compilation is required to run it. While this should work on all major operating system platforms like Windows, macOS, and Linux, the use of Linux is highly recommended. This document describes in particular the installation of Ubuntu Linux version 22.04 LTS with all the tools necessary to run the app. Further down the document there is a step-by-step instruction how to install Ubuntu 22.04 LTS in a VirtualBox machine. At the end of the document there are some hints for other operating systems as well - but please understand that no support will be given for that.
 
 ## Preparation to build the Feistel Function App
 ### Install `git` in Ubuntu 22.04
@@ -70,7 +70,7 @@ Feel free to test the functionality of the app, it won't cause any damage since 
 Finally, there are some tasks waiting...
 
 ## Ubuntu 22.04 LTS guest VM installation
-If your current operating system is Windows or macOs you would start to create a virtual machine with at least 30 GB disk space. The following step-by-step procedure assumes that VirtualBox has been installed on the host.
+If your current operating system is Windows or macOS you would start to create a virtual machine with at least 30 GB disk space. The following step-by-step procedure assumes that VirtualBox has been installed on the host.
 
 ### VirtualBox recommended Settings
 The following settings are recommended when setting up the VM with VirtualBox:
@@ -97,7 +97,7 @@ This step is not essential, however, it is recommended to switch to plasma deskt
 * Log in
 
 ### Frequently used Apps in Plasma Desktop
-Similar to Windows there is a start button in the lower left corner which can be used to start every available app. The most important apps for this project are "Konsole" (in System) and "Qt Creator" (in Development). I pull the appropriate icons to the desktop ("Copy Here") so that launching them gets very easy.
+Similar to Windows there is a start button in the lower left corner which can be used to start every available app. The most important apps for this project are "Konsole" (in System) and "Qt Creator" (in Development). I recommend pulling the appropriate icons to the desktop ("Copy Here") so that launching them gets very easy.
 
 
 ## Non Ubuntu 22.04 user
@@ -105,7 +105,7 @@ There are other ways to set up the Feistel Function app although not supported b
 
 There are offline installers as well which are not asking for registration when the computer is disconnected (e.g. flight mode), but then all requirements need to be set up manually. Qt-Creator depends on Qt, C++, Perl, Python and Ruby. Offline installer can be found [here](https://www.qt.io/offline-installers). 
 
-Advanced and experienced macOs user can install Qt-Creator using the homebrew [formulae](https://formulae.brew.sh/cask/qt-creator). Some dependencies have to be setup manually unless you do the registration thing mentioned above.
+Advanced and experienced macOS user can install Qt-Creator using the homebrew [formulae](https://formulae.brew.sh/cask/qt-creator). Some dependencies have to be setup manually unless you do the registration thing mentioned above.
 
 When asked for the Qt-Version go for 5.15. It might be possible that the app runs under Qt6 as well, but this is completely untested.
 
